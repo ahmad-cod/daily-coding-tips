@@ -12,7 +12,7 @@ Array.from({ length: 12 }, (_, i) => i+1) // This sequence will start from 1
 // Example
 Array.from({ length: 10 }, (_, i) => i+1) // outputs : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
-###### Remove all falsy values from an array
+###### Remove all falsy values from an array <!--Nov 9 -->
 ```javascript
 // in 1 line of code, remove all falsy values from an arr
 array.filter(Boolean);
@@ -20,4 +20,9 @@ array.filter(Boolean);
 // Example
 [false, 0, true, 2, '', 'aroyehun'].filter(Boolean)
 // outputs: [ true, 2, 'aroyehun' ]
+```
+
+* Format a Number as a currency
+```javascript
+const formatCurrency = (number, currency = 'USD') => new Intl.NumberFormat('en-US', { style: 'currency', currency }).format(number);
 ```
