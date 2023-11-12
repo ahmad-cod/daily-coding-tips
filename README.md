@@ -26,3 +26,11 @@ array.filter(Boolean);
 ```javascript
 const formatCurrency = (number, currency = 'USD') => new Intl.NumberFormat('en-US', { style: 'currency', currency }).format(number);
 ```
+
+* Capitalize The First Character of Each Word in a String
+```javascript
+const Capitalize = (str) => str.replace('/\b\w/g', char => char.toUpperCase())
+
+// Example
+Capitalize('i am a slave of Allah') // 'I Am A Slave Of Allah'
+```
