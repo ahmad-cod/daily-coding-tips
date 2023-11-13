@@ -34,3 +34,11 @@ const Capitalize = (str) => str.replace('/\b\w/g', char => char.toUpperCase())
 // Example
 Capitalize('i am a slave of Allah') // 'I Am A Slave Of Allah'
 ```
+// Nov 13, 2023
+* Identify the shared items between two arrays
+```javascript
+const arrayIntersection = (arr1, arr2) => arr1.filter(item => arr2.includes(item));
+
+// Example
+arrayIntersection(['aroyehun', 2, 3, 4], ['ahmad', 20, 2, 4]) // [2, 4]
+```
